@@ -12,11 +12,6 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
 - Simuler des scénarios d’attaque en environnement contrôlé
 
 ## 🏗️ Architecture
-
-- Hôte Windows 11 (hyperviseur / machine locale)
-- VPS Ubuntu (Wazuh – SIEM)
-- VM Domain Controller (Active Directory)
-- VM Windows 10 (Client du domaine)
  ```
 🖥️ Hôte Windows 11 (Hyperviseur)
         │
@@ -24,7 +19,6 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
         ├── 💻 VM Windows 10 (Client AD)
         └── 🌐 VPS Ubuntu (Wazuh SIEM)
  ```   
-
 ## ⚙️ Fonctionnalités mises en place
 
 - Collecte des logs Windows et Linux
