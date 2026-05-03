@@ -1,3 +1,5 @@
+![](Screenshots/dashboard.png)
+
 ## Objectif
 
 Mettre en place une architecture de supervision et de détection basée sur Wazuh, afin de centraliser les logs d’un environnement Active Directory.
