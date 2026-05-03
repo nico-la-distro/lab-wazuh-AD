@@ -58,6 +58,8 @@ NET START WazuhSvc
 
 ![[vérification_agents.png]]
 
+![](Screenshots/vérification_agents.png)
+
 ---
 ## Validation de remontée des logs
 
