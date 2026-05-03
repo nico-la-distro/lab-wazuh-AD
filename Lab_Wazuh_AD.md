@@ -11,6 +11,7 @@ L’objectif est de :
 - Renforcer la sécurité du serveur (hardening)
 - Améliorer la visibilité des actions système via Sysmon
 
+---
 ## Architecture
 
 - Hôte Windows 11 (hyperviseur / machine locale)
