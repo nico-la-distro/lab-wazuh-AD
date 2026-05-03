@@ -18,7 +18,7 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
 - VM Domain Controller (Active Directory)
 - VM Windows 10 (Client du domaine)
  ```
-              🖥️ Hôte Windows 11
+                 🖥️ Hôte Windows 11
                  (Hyperviseur local)
                         │
         ┌───────────────┴───────────────┐
