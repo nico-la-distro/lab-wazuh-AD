@@ -56,16 +56,12 @@ NET START WazuhSvc
 
 **Vérification**
 
-![[vérification_agents.png]]
-
 ![](Screenshots/vérification_agents.png)
 
 ---
 ## Validation de remontée des logs
 
 **Echec volontaire sur DC**
-
-![[DC_password_incorrect.png]]
 
 ![](Screenshots/DC_password_incorrect.png)
 
@@ -75,13 +71,9 @@ Filtres :
 - agent.name is WIN-4DOPS45VVLU
 - rule.id is 60122
 
-![[DC_event_wazuh_failed_logon.png]]
-
 ![](Screenshots/DC_event_wazuh_failed_logon.png)
 
 **Logon sur WIN-10 (client du DC)**
-
-![[testuser_welcome.png]]
 
 ![](Screenshots/testuser_welcome.png)
 
@@ -90,8 +82,6 @@ Filtres :
 Filtres :
 - agent.name is WIN-10  
 - rule.id is 60106
-
-![[WIN-10_event_logon_success.png]]
 
 ![](Screenshots/WIN-10_event_logon_success.png)
 
@@ -105,8 +95,6 @@ Ces tests permettent de valider la remontée des événements de sécurité vers
 Le VPS est volontairement laissé en ssh + mdp pour observer le comportement d'internet avant le hardening (à la manière d'un honeypot), on observe :
 - tentatives de connexion SSH
 - brute force automatisés depuis Internet
-
-![[bruit_sur_le_SIEM.png]]
 
 ![](Screenshots/bruit_sur_le_SIEM.png)
 
@@ -179,8 +167,6 @@ ssh -v user@IP_DU_VPS
 ✅ Utilise la clé pour s'authentifier
 
 **Avant / Après ssh key**
-
-![[avant_après_sshkey.png]]
 
 ![](Screenshots/avant_après_sshkey.png)
 
@@ -313,8 +299,6 @@ net group "Domain Admins" /domain
 
 **POV du shell Administrator sur le DC**
 
-![[pov_shell_reconnaissance.png]]
-
 ![](Screenshots/pov_shell_reconnaissance.png)
 
 **Remontée des commandes dans le SIEM**
@@ -323,13 +307,9 @@ Filtres :
 - agent.name is WIN-4DOPS45VVLU
 - search sysmon
 
-![[remontée_des_commandes_dans_SIEM.png]]
-
 ![](Screenshots/remontée_des_commandes_dans_SIEM.png)
 
 **Détail de la commande `net group "Domain Admins" /domain`**
-
-![[détail_net_group.png]]
 
 ![](Screenshots/détail_net_group.png)
 
@@ -345,8 +325,6 @@ Grâce à Sysmon, ces actions sont visibles dans le SIEM avec :
 - IP de l'agent concerné
 
 Ces événements sont enrichis par Sysmon et collectés dans Wazuh via le provider `Microsoft-Windows-Sysmon`
-
-![[sysmon_provider.png]]
 
 ![](Screenshots/sysmon_provider.png)
 
