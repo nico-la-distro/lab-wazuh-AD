@@ -18,16 +18,11 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
 - VM Domain Controller (Active Directory)
 - VM Windows 10 (Client du domaine)
  ```
-                 🖥️ Hôte Windows 11
-                 (Hyperviseur local)
-                        │
-        ┌───────────────┴───────────────┐
-        ▼                               ▼
-🌐 VPS Ubuntu (Internet)         🧪 Environnement Virtualisé
-   Wazuh SIEM                    ┌──────────────────────────┐
-                                 │ 🧠 DC Active Directory   │
-                                 │ 💻 Windows 10 Client     │
-                                 └──────────────────────────┘
+🖥️ Hôte Windows 11 (Hyperviseur)
+        │
+        ├── 🧠 VM Domain Controller (Active Directory)
+        ├── 💻 VM Windows 10 (Client AD)
+        └── 🌐 VPS Ubuntu (Wazuh SIEM)
  ```   
 
 ## ⚙️ Fonctionnalités mises en place
@@ -47,8 +42,7 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
 
 ## 🚀 Conclusion
 
-Projet de mise en place d’un SIEM permettant la centralisation des logs et l’analyse d’événements de sécurité dans un environnement Windows / Active Directory.
-L’ensemble permet de comprendre la chaîne complète de détection : génération des logs → collecte → analyse → visualisation.
+Mise en place d’un SIEM fonctionnel permettant de comprendre le cycle complet d’un événement de sécurité dans un environnement Active Directory : génération → collecte → analyse → visualisation.
 
 ## ⏭️ Suite logique
 
