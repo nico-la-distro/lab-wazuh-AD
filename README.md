@@ -1,5 +1,7 @@
 # 🛡️ Lab Wazuh / AD
 
+![](Screenshots/dashboard.png)
+
 ## 📌 Présentation
 
 Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les logs d’une infrastructure composée d’un Active Directory et de machines Windows/Linux.
