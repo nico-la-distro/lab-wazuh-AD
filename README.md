@@ -38,7 +38,7 @@ Projet de mise en place d’un SIEM (Wazuh) pour centraliser et analyser les log
 
 ## 🚀 Conclusion
 
-Mise en place d’un SIEM fonctionnel permettant de comprendre le cycle complet d’un événement de sécurité dans un environnement Active Directory : génération → collecte → analyse → visualisation.
+Projet de lab SOC permettant de comprendre la détection et l’analyse d’événements de sécurité dans un environnement Active Directory, via un SIEM centralisé.
 
 ## ⏭️ Suite logique
 
