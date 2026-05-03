@@ -42,4 +42,6 @@ Mise en place d’un SIEM fonctionnel permettant de comprendre le cycle complet 
 
 ## ⏭️ Suite logique
 
-Évolution vers des scénarios Active Directory plus avancés, incluant mouvement latéral et enrichissement des sources de logs dans une logique SOC.
+- Détection de mouvement latéral en Active Directory
+- Ajout de nouvelles sources de logs (DNS, proxy, services AD)
+- Enrichissement des règles de corrélation Wazuh
