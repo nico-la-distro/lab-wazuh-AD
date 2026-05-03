@@ -67,6 +67,8 @@ NET START WazuhSvc
 
 ![[DC_password_incorrect.png]]
 
+![](Screenshots/DC_password_incorrect.png)
+
 **Event sur Wazuh**
 
 Filtres : 
@@ -75,9 +77,13 @@ Filtres :
 
 ![[DC_event_wazuh_failed_logon.png]]
 
+![](Screenshots/DC_event_wazuh_failed_logon.png)
+
 **Logon sur WIN-10 (client du DC)**
 
 ![[testuser_welcome.png]]
+
+![](Screenshots/testuser_welcome.png)
 
 **Event du logon sur Wazuh**
 
@@ -86,6 +92,8 @@ Filtres :
 - rule.id is 60106
 
 ![[WIN-10_event_logon_success.png]]
+
+![](Screenshots/WIN-10_event_logon_success.png)
 
 Ces tests permettent de valider la remontée des événements de sécurité vers le SIEM.
 
@@ -99,6 +107,8 @@ Le VPS est volontairement laissé en ssh + mdp pour observer le comportement d'i
 - brute force automatisés depuis Internet
 
 ![[bruit_sur_le_SIEM.png]]
+
+![](Screenshots/bruit_sur_le_SIEM.png)
 
 |Rule ID|Description|Contexte|
 |---|---|---|
@@ -171,6 +181,8 @@ ssh -v user@IP_DU_VPS
 **Avant / Après ssh key**
 
 ![[avant_après_sshkey.png]]
+
+![](Screenshots/avant_après_sshkey.png)
 
 **Conclusion**
 
@@ -303,6 +315,8 @@ net group "Domain Admins" /domain
 
 ![[pov_shell_reconnaissance.png]]
 
+![](Screenshots/pov_shell_reconnaissance.png)
+
 **Remontée des commandes dans le SIEM**
 
 Filtres :
@@ -311,9 +325,13 @@ Filtres :
 
 ![[remontée_des_commandes_dans_SIEM.png]]
 
+![](Screenshots/remontée_des_commandes_dans_SIEM.png)
+
 **Détail de la commande `net group "Domain Admins" /domain`**
 
 ![[détail_net_group.png]]
+
+![](Screenshots/détail_net_group.png)
 
 **Conclusion**
 
@@ -329,6 +347,8 @@ Grâce à Sysmon, ces actions sont visibles dans le SIEM avec :
 Ces événements sont enrichis par Sysmon et collectés dans Wazuh via le provider `Microsoft-Windows-Sysmon`
 
 ![[sysmon_provider.png]]
+
+![](Screenshots/sysmon_provider.png)
 
 ---
 ## Conclusion
